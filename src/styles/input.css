@@ -155,7 +155,13 @@ html{
    width: 40%;
    height: 230px;
   }
-  
+  .icons-hover:hover{
+   color: #4ade80;
+  }
+  .icons-hover{
+   color: white;
+  }
+
   @keyframes types{
    from{
       opacity: 0;

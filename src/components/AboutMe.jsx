@@ -1,6 +1,7 @@
 import picture from "../assets/betha4.png";
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
+import { ImMail4, ImWhatsapp } from "react-icons/im";
 
 const AboutMe = () => {
   const [sentence, setSentence] = useState("");
@@ -43,7 +44,7 @@ const AboutMe = () => {
       className=" about pt-6"
       style={{ display: "flex", flexDirection: "column", alignItems: "center", backgroundColor: "#272727",}}
     >
-      <p className="text-white text-3xl font-semibold font-sans mb-5">ABOUT ME</p>
+      <p className="relative text-white text-3xl font-semibold font-sans mb-5" style={{zIndex: 999999}}>ABOUT ME</p>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: -15 },
@@ -80,16 +81,27 @@ const AboutMe = () => {
         </div>
         <div></div>
       </div>
+      <div style={{display: "flex", alignItems: "center", justifyContent: "space-evenly", width: "50%"}}>
       <button
-        className=" btn-resume text-white mt-6 mb-10 hover:border-green-400 hover:border-2 hover:bg-transparent hover:text-green-400 bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-400  rounded-lg text-sm px-5 py-2.5 text-center mr-2 font-bold  hover:transition-all duration-300"
+        className=" icons-hover btn-resume text-white mt-6 mb-10 hover:border-green-400 hover:border-2 hover:bg-transparent hover:text-green-400 bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-400  rounded-lg text-sm px-5 py-2.5 text-center mr-2 font-bold  hover:transition-all duration-300"
         onClick={() => window.open("mailto:fransiskusbetha@gmail.com")}
         target="_blank"
-        style={{ boxShadow: "0px 0px 20px #4ade80" }}
+        style={{ boxShadow: "0px 0px 20px #4ade80", display: "flex", alignItems: "center" }}
         rel="noopener noreferrer"
       >
-        Send Email
+        <ImMail4  size={30} style={{marginRight: "5px"}} /> <p className="text-lg">Send Email</p>
+      </button>
+      <button
+        className=" icons-hover btn-resume text-white mt-6 mb-10 hover:border-green-400 hover:border-2 hover:bg-transparent hover:text-green-400 bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-400  rounded-lg text-sm px-5 py-2.5 text-center mr-2 font-bold  hover:transition-all duration-300"
+        onClick={() => window.open("https://wa.me/628983428766")}
+        target="_blank"
+        style={{ boxShadow: "0px 0px 20px #4ade80", display: "flex", alignItems: "center" }}
+        rel="noopener noreferrer"
+      >
+        <ImWhatsapp size={30} style={{marginRight: "5px", }} /> <p className="text-lg">WA Me</p>
       </button>
       {/* <p><button onClick={() => window.open("mailto:fransiskusbetha@gmail.com")} target="_blank" style={{color: "white"}} rel="noopener noreferrer">Contact me</button></p> */}
+    </div>
     </div>
   );
 };

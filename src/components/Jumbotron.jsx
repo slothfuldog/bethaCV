@@ -18,7 +18,7 @@ const Jumbotron = (props) => {
     // List of sentences
   }, [isInView]);
   return (
-    <div className="  mx-auto" style={{display: "flex", justifyContent:"cneter", alignItems: "center", height: "700px"}}>
+    <div className="  mx-auto" style={{display: "flex", justifyContent:"cneter", alignItems: "center", height: "740px"}}>
       <div style={{ display: "flex", alignItems: "center", height: "500px", width: "100%" }}>
         <div
           style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%" }}
