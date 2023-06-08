@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { ImLinkedin, ImGithub, ImTwitter, ImFacebook2 } from "react-icons/im";
 import Instagram from "../assets/instagram.png";
 import { useEffect, useState } from "react";
+import {AiFillInstagram} from "react-icons/ai"
 
 const Navbar = ({show}) => {
   let navigate = useNavigate();
@@ -86,7 +87,7 @@ const Navbar = ({show}) => {
                   height="30"
                   viewBox="0 0 256 256"
                   xmlSpace="preserve"
-                  style={{ marginLeft: "10px" }}
+                  style={{ marginLeft: "10px", }}
                 >
                   <defs></defs>
                   <g
@@ -112,7 +113,7 @@ const Navbar = ({show}) => {
                         strokeLinecap: "butt",
                         strokeLinejoin: "miter",
                         strokeMiterlimit: 10,
-                        fill: "rgb(29,161,242)",
+                        fill: "white",
                         fillRule: "nonzero",
                         opacity: 1,
                       }}
@@ -129,7 +130,7 @@ const Navbar = ({show}) => {
                 target="_blank"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded md:p-0  md:dark:hover:text-blue-500  dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                <img src={Instagram} id="ig" style={{ height: "35px", width: "40px" }} />
+                <AiFillInstagram color="white" size={34}/>
               </a>
             </li>
           </ul>

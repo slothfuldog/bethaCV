@@ -29,7 +29,7 @@ const Projects = () => {
         height: "740px",
       }}
     >
-      <h1 className="text-3xl text-white mt-7">PROJECTS</h1>
+      <h1 className="text-3xl text-white mt-7 font-bold font-sans">PROJECTS</h1>
       <motion.div
           variants={{
             hidden: { opacity: 0, y: -75 },
@@ -90,17 +90,19 @@ const Projects = () => {
                   <a
                     href="https://github.com/slothfuldog/JCWDOL00801"
                     target="_blank"
-                    class="inline-flex items-center px-3 py-2 text-lg hover:bg-gray-800 font-medium text-center text-white bg-gray-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 "
+                    class="icons-hover inline-flex items-center px-3 py-2 text-lg hover:bg-transparent hover:border-green-400 font-medium text-center text-white bg-green-400 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+                    style={{border: "1px solid #4ade80", boxShadow: "0 0 10px #4ade80"}}
                   >
-                    <ImGithub color="white" size={30} style={{ marginRight: "10px" }} />
+                    <ImGithub  size={30} style={{ marginRight: "10px" }} />
                     Github
                   </a>
                   <a
                     href="https://jcwdol00801.purwadhikabootcamp.com/"
                     target="_blank"
-                    class="inline-flex items-center px-3 py-2 text-lg hover:bg-gray-800 font-medium text-center text-white bg-gray-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 "
+                    class="icons-hover inline-flex items-center px-3 py-2 text-lg hover:bg-transparent hover:border-green-400 font-medium text-center text-white bg-green-400 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+                    style={{border: "1px solid #4ade80", boxShadow: "0 0 10px #4ade80"}}
                   >
-                    <ImDisplay color="white" size={30} style={{ marginRight: "10px" }} /> Live Web
+                    <ImDisplay  size={30} style={{ marginRight: "10px" }} /> Live Web
                   </a>
                 </div>
               </div>
@@ -132,9 +134,10 @@ const Projects = () => {
                   <a
                     href="https://github.com/slothfuldog/bethaCV"
                     target="_blank"
-                    class="inline-flex items-center px-3 py-2 text-lg hover:bg-gray-800 font-medium text-center text-white bg-gray-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+                    class="icons-hover inline-flex items-center px-3 py-2 text-lg hover:bg-transparent hover:border-green-400 font-medium text-center text-white bg-green-400 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+                    style={{border: "1px solid #4ade80", boxShadow: "0 0 10px #4ade80"}}
                   >
-                    <ImGithub color="white" size={30} style={{ marginRight: "10px" }} />
+                    <ImGithub size={30} style={{ marginRight: "10px" }} />
                     Github
                   </a>
                 </div>
@@ -166,9 +169,10 @@ const Projects = () => {
                   <a
                     href="https://github.com/slothfuldog/cashierApp"
                     target="_blank"
-                    class="inline-flex items-center px-3 py-2 text-lg hover:bg-gray-800 font-medium text-center text-white bg-gray-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+                    class="icons-hover inline-flex items-center px-3 py-2 text-lg hover:bg-transparent hover:border-green-400 font-medium text-center text-white bg-green-400 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300"
+                    style={{border: "1px solid #4ade80", boxShadow: "0 0 10px #4ade80"}}
                   >
-                    <ImGithub color="white" size={30} style={{ marginRight: "10px" }} />
+                    <ImGithub size={30} style={{ marginRight: "10px" }} />
                     Github
                   </a>
                 </div>

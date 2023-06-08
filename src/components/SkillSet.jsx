@@ -58,38 +58,21 @@ const SkillSet = () => {
           alignItems: "center",
         }}
       >
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: -75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={mainControls}
-          transition={{ duration: 0.5, delay: 0.25 }}
-        >
-          <p className=" text-4xl font-bold text-white" ref={ref}>
+
+          <p className=" text-3xl font-bold text-white">
             SKILL SET
           </p>
-        </motion.div>
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: -75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={mainControls}
-          transition={{ duration: 0.5, delay: 0.25 }}
-        >
+
           <div style={{ display: "flex", flexDirection: "row" }}>
             <pre className="text-3xl font-bold " style={{ color: "#0A0A0A" }}>
               {" "}
-              <span id="text" className="text-3xl font-bold text-green-400" ref={ref}>
+              <span id="text" className="text-3xl font-bold text-green-400">
                 {" "}
               </span>
             </pre>
           </div>
           <div></div>
-        </motion.div>
+        
         <div className=" mt-40" >
         <motion.div
           variants={{
